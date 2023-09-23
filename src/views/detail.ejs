@@ -11,13 +11,23 @@
 
         <main class="detail-product-container">
             <section class="slider-images">
-                <div class="back-image">Anterior</div>
+
+                <ul class="slider-images-counter">
+                </ul>
+
+                <div class="back-image"><i class="fa-solid fa-chevron-left"></i></div>
+
                 <img src="/images/jacket/jacket_1.png" alt="Jacket Image">
                 <img src="/images/jacket/jacket_2.png" alt="Jacket Image">
                 <img src="/images/jacket/jacket_3.png" alt="Jacket Image">
-                <div class="next-image">Siguiente</div>
+                <img src="/images/jacket/jacket_1.png" alt="Jacket Image">
+                <img src="/images/jacket/jacket_2.png" alt="Jacket Image">
+                <img src="/images/jacket/jacket_3.png" alt="Jacket Image">
+
+                <div class="next-image"><i class="fa-solid fa-chevron-right"></i></div>
 
             </section>
+
             <section class="detail-product-description">
                 <h2>Name</h2>
                 <p>Price</p>
@@ -33,15 +43,21 @@
                     <li><a href>L</a></li>
                     <li><a href>XL</a></li>
                 </ul>
-                <form action="">
+                <form action>
                     <button>Add to cart</button>
                 </form>
                 <section class="product-info">
                     <h3>Product Info</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eaque nulla ullam nemo, quisquam debitis delectus aspernatur praesentium ipsa aliquam possimus exercitationem molestias ex? Nihil nulla dolorem perferendis est illo.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sapiente eaque nulla ullam nemo, quisquam debitis
+                        delectus aspernatur praesentium ipsa aliquam possimus
+                        exercitationem molestias ex? Nihil nulla dolorem
+                        perferendis est illo.</p>
                 </section>
             </section>
         </main>
+
+        <script src="/scripts/slider.js"></script>
     </body>
 
     <%- include('./partials/footer.ejs') %>
