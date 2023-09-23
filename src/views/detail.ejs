@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <%- include('./partials/init') %>
+        <link rel="stylesheet" href="/styles/detail.css">
+    </head>
+
+    <body>
+        <%- include('./partials/header') %>
+
+        <main class="detail-product-container">
+            <section class="slider-images">
+                <div class="back-image">Anterior</div>
+                <img src="/images/jacket/jacket_1.png" alt="Jacket Image">
+                <img src="/images/jacket/jacket_2.png" alt="Jacket Image">
+                <img src="/images/jacket/jacket_3.png" alt="Jacket Image">
+                <div class="next-image">Siguiente</div>
+
+            </section>
+            <section class="detail-product-description">
+                <h2>Name</h2>
+                <p>Price</p>
+                <ul class="color-list">
+                    <li><a href>Red</a></li>
+                    <li><a href>Red</a></li>
+                    <li><a href>Red</a></li>
+                </ul>
+                <ul class="size-list">
+                    <li><a href>XS</a></li>
+                    <li><a href>S</a></li>
+                    <li><a href>M</a></li>
+                    <li><a href>L</a></li>
+                    <li><a href>XL</a></li>
+                </ul>
+                <form action="">
+                    <button>Add to cart</button>
+                </form>
+                <section class="product-info">
+                    <h3>Product Info</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eaque nulla ullam nemo, quisquam debitis delectus aspernatur praesentium ipsa aliquam possimus exercitationem molestias ex? Nihil nulla dolorem perferendis est illo.</p>
+                </section>
+            </section>
+        </main>
+    </body>
+
+    <%- include('./partials/footer.ejs') %>
+
+</html>

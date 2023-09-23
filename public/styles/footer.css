@@ -1,0 +1,68 @@
+footer {
+    width: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
+    background-color: black;
+    min-height: 155px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    width: 100%;
+    height: 80%;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+}
+footer nav ul li {
+    line-height: 170%;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+footer form label{
+    color: white;
+    font-size: 13px;
+}
+
+footer form section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer form input[type="email"] {
+    width: 315px;
+    padding: 1rem;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    outline: none;
+}
+
+footer form input[type="submit"] {
+    width: 168px;
+    padding: 1rem;
+    color: black;
+    background-color: white;
+}

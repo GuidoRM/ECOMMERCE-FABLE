@@ -1,0 +1,21 @@
+[
+    {
+        "id": 0,
+        "name": "Jacket KLS Beige",
+        "price": 105,
+        "image": "/images/jacket/jacket_1.png",
+        "category": "jacket"
+    },{
+        "id": 1,
+        "name": "Jacket KLS Black",
+        "price": 105,
+        "image": "/images/jacket/jacket_2.png",
+        "category": "jacket"
+    },{
+        "id": 2,
+        "name": "Jacket KLS Graphite",
+        "price": 105,
+        "image": "/images/jacket/jacket_3.png",
+        "category": "jacket"
+    }
+]

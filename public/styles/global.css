@@ -1,0 +1,53 @@
+/* Fuente bgap-regular */
+@font-face {
+    font-family: 'bgap-regular';
+    src: url('./../fonts/BasisGrotesqueArabicPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Fuente bgap-bold */
+@font-face {
+    font-family: 'bgap-bold';
+    src: url('./../fonts/BasisGrotesqueArabicPro-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Fuente bgap-light */
+@font-face {
+    font-family: 'bgap-light';
+    src: url('./../fonts/BasisGrotesqueArabicPro-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Fuente bgap-medium */
+@font-face {
+    font-family: 'bgap-medium';
+    src: url('./../fonts/BasisGrotesqueArabicPro-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Fuente bgap-black */
+@font-face {
+    font-family: 'bgap-black';
+    src: url('./../fonts/BasisGrotesqueArabicPro-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Definir variables */
+:root {
+    --main_color: #080B13;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'bgap-medium';
+    color: var(--main_color);
+}
