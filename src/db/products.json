@@ -81,5 +81,48 @@
     "image": "/images/product_default.png",
     "description": "                    ",
     "category": ""
+  },
+  {
+    "id": 4,
+    "name": "Jacket Klassic",
+    "price": "12312",
+    "image": "/images/product_default.png",
+    "description": "           123123213         ",
+    "colors": [
+      "#ce4b4b",
+      "#4e8eca"
+    ],
+    "sizes": [
+      "xs",
+      "s"
+    ],
+    "category": "Jacket"
+  },
+  {
+    "id": 5,
+    "name": "Guido Mamani",
+    "price": "123",
+    "image": "/images/product_default.png",
+    "description": "           adsad         ",
+    "colors": "#994848",
+    "sizes": "xs",
+    "category": "Jacket"
+  },
+  {
+    "id": 6,
+    "name": "Jacket Klassic",
+    "price": "13213",
+    "image": "/images/products/product_1695517843341.png",
+    "description": "           AAAAAAAAAAAA         ",
+    "colors": [
+      "#ba3636",
+      "#291a1a"
+    ],
+    "sizes": [
+      "xs",
+      "s",
+      "xl"
+    ],
+    "category": "Jacket"
   }
 ]

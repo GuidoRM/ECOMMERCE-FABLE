@@ -17,12 +17,14 @@ const productController = {
     creatingProcess: (req, res) => {
         const productsJSON = fs.readFileSync("./src/db/products.json", "utf-8");
         const productsObject = JSON.parse(productsJSON);
-        
+
+        console.log("IMAGE PATH: ", req.body.image);
+
         const newProduct = {
             "id": productsObject[productsObject.length-1].id + 1 ,
             "name": req.body.name,
             "price": req.body.price,
-            "image": "/images/product_default.png",
+            "image": `/images/products/${req.body?.image}` || "/images/product_default.png",
             "description": req.body.description,
             "colors": req.body.colors,
             "sizes": req.body.sizes,
