@@ -18,13 +18,13 @@ const productController = {
         const productsJSON = fs.readFileSync("./src/db/products.json", "utf-8");
         const productsObject = JSON.parse(productsJSON);
 
-        console.log("IMAGE PATH: ", req.body.image);
+        console.log("IMAGE PATH: ", req.body.images);
 
         const newProduct = {
             "id": productsObject[productsObject.length-1].id + 1 ,
             "name": req.body.name,
             "price": req.body.price,
-            "image": `/images/products/${req.body?.image}` || "/images/product_default.png",
+            "image": req.body?.images?`/images/products/${req.body?.images[0]}` : "/images/product_default.png",
             "description": req.body.description,
             "colors": req.body.colors,
             "sizes": req.body.sizes,
