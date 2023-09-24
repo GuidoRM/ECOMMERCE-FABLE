@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <%- include('./partials/init') %>
+        <link rel="stylesheet" href="/styles/create.css">
+    </head>
+
+    <body>
+        <%- include('./partials/header') %>
+
+        <form method="post" target="/product/create" class="form-create" enctype="multipart/form-data">
+            <section class="form-create-section">
+                <section class="form-field-img">
+                    <label for>Images</label>
+                    <input name="image" type="file" name id>
+                </section>
+
+                <section class="form-field-button">
+                    <button type="submit">CREATE PRODUCT</button>
+                    <button type="reset">RESET</button>
+                </section>
+            </section>
+
+            <section class="form-create-section">
+                <section class="form-field">
+                    <label for>Nombre</label>
+                    <input name="name" type="text">
+                </section>
+
+                <section class="form-field-two">
+                    <section class="form-field">
+                        <label for>Price</label>
+                        <input name="price" type="number">
+                    </section>
+
+                    <section class="form-field">
+                        <label for>Category</label>
+                        <input name="category" type="text">
+                    </section>
+                </section>
+
+                <section class="form-field">
+                    <label id="add-color" class="color-label" for="">
+                        Add Color
+                        
+                    </label>
+                    <div id="color-container">
+                    </div>
+                </section>
+
+                <section class="form-field-color">
+                    <label for="size-xs">XS</label>
+                    <input type="checkbox" name="sizes" value="xs" id="size-xs">
+
+                    <label for="size-s">S</label>
+                    <input type="checkbox" name="sizes" value="s" id="size-s">
+
+                    <label for="size-m">M</label>
+                    <input type="checkbox" name="sizes" value="m" id="size-m">
+
+                    <label for="size-x">X</label>
+                    <input type="checkbox" name="sizes" value="x" id="size-x">
+
+                    <label for="size-xl">XL</label>
+                    <input type="checkbox" name="sizes" value="xl" id="size-xl">
+                </section>
+
+                <section class="form-field">
+                    <label for>Description</label>
+                    <textarea name="description" id cols="20" rows="1">
+                    </textarea>
+                </section>
+            </section>
+        </form>
+        <script src="/scripts/create.js"></script>
+        <%- include('./partials/footer.ejs') %>
+    </body>
+
+</html>
