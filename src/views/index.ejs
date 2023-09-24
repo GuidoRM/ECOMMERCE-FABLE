@@ -44,23 +44,24 @@
 
                 <% for(let product of products) { %>
 
-                   
-                        <article class="main-section-product">
-                            <img src="<%= product.image %>" alt="klassic_1">
-        
-                            <section class="main-section-product-description">
-                                <h3 class="main-section-product-description-title">
-                                    <%= product.name %>
-                                </h3>
-                                <p class="main-section-product-description-price">
-                                    €<%= product.price %>
-                                </p>
-                                <a href="/product/detail/<%= product.id %>">
-                                    Ver
-                                </a>
-                            </section>
-        
-                        </article>
+                    <article class="main-section-product">
+
+                        <img src="/images/products/<%= product.images[0] %>"
+                            alt="klassic_1">
+
+                        <section class="main-section-product-description">
+                            <h3 class="main-section-product-description-title">
+                                <%= product.name %>
+                            </h3>
+                            <p class="main-section-product-description-price">
+                                €<%= product.price %>
+                            </p>
+                            <a href="/product/detail/<%= product.id %>">
+                                Ver
+                            </a>
+                        </section>
+
+                    </article>
 
                 <% } %>
 

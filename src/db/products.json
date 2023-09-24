@@ -1,125 +1,81 @@
 [
   {
     "id": 0,
-    "name": "Jacket KLS Beige",
-    "price": 105,
-    "image": "/images/jacket/jacket_1.png",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eaque nulla ullam nemo, quisquam debitis delectus aspernatur praesentium ipsa aliquam possimus exercitationem molestias ex? Nihil nulla dolorem perferendis est illo.",
+    "name": "Jacket KLS",
+    "price": "105",
+    "images": [
+      "product_1695541182821.png",
+      "product_1695541182823.png"
+    ],
+    "description": "Jacket made of a loose fit makes the product a universal element of the upper layer. Two patch pockets and one hidden pocket. Branded lining with FABLE pattern. Shoulder pads of medium rigidity for shaping.",
     "colors": [
-      "#F4E1CC",
-      "#262626",
-      "#9FAED9",
-      "#56AA91",
-      "#707070",
-      "#743821",
-      "#C89607",
-      "#C89607"
+      "#af2c2c",
+      "#56fbb3",
+      "#0f97d2",
+      "#e4dddd",
+      "#1fc1a1",
+      "#5e5e5e",
+      "#d1cf89"
     ],
     "sizes": [
-      "S",
-      "XS",
-      "M",
-      "L",
-      "XL"
+      "xs",
+      "s",
+      "xl"
     ],
-    "category": "jacket"
+    "category": "Jacket"
   },
   {
     "id": 1,
-    "name": "Jacket KLS Black",
-    "price": 105,
-    "image": "/images/jacket/jacket_2.png",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eaque nulla ullam nemo, quisquam debitis delectus aspernatur praesentium ipsa aliquam possimus exercitationem molestias ex? Nihil nulla dolorem perferendis est illo.",
+    "name": "Jacket Klassic",
+    "price": "120312",
+    "images": [
+      "product_1695572900358.png"
+    ],
+    "description": "Good Jacket!",
     "colors": [
-      "#F4E1CC",
-      "#262626",
-      "#9FAED9",
-      "#56AA91",
-      "#707070",
-      "#743821",
-      "#C89607",
-      "#C89607"
+      "#d7c5b1",
+      "#d9aa8c",
+      "#f1f1ef"
     ],
     "sizes": [
-      "S",
-      "XS",
-      "M",
-      "L",
-      "XL"
+      "xs",
+      "m",
+      "xl"
     ],
-    "category": "jacket"
+    "category": "Jacket"
   },
   {
     "id": 2,
-    "name": "Jacket KLS Graphite",
+    "name": "New Product",
     "price": 105,
-    "image": "/images/jacket/jacket_3.png",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eaque nulla ullam nemo, quisquam debitis delectus aspernatur praesentium ipsa aliquam possimus exercitationem molestias ex? Nihil nulla dolorem perferendis est illo.",
+    "images": [
+     "product_default.png"
+    ],
+    "description": "Description....",
     "colors": [
-      "#F4E1CC",
-      "#262626",
-      "#9FAED9",
-      "#56AA91",
-      "#707070",
-      "#743821",
-      "#C89607",
-      "#C89607"
+      "#ababab"
     ],
     "sizes": [
-      "S",
-      "XS",
-      "M",
-      "L",
-      "XL"
+      "s",
+      "xl"
     ],
-    "category": "jacket"
+    "category": "new"
   },
   {
     "id": 3,
-    "name": "",
-    "price": "",
-    "image": "/images/product_default.png",
-    "description": "",
-    "category": ""
-  },
-  {
-    "id": 4,
-    "name": "",
-    "price": "",
-    "image": "/images/product_default.png",
-    "description": "",
-    "category": ""
-  },
-  {
-    "id": 5,
-    "name": "",
-    "price": "",
-    "image": "/images/products/undefined",
-    "description": "",
-    "category": ""
-  },
-  {
-    "id": 6,
-    "name": "",
-    "price": "",
-    "image": "/images/products/product_1695529689596.png",
-    "description": "",
-    "category": ""
-  },
-  {
-    "id": 7,
-    "name": "",
-    "price": "",
-    "image": "/images/products/product_1695529731467.png",
-    "description": "",
-    "category": ""
-  },
-  {
-    "id": 8,
-    "name": "",
-    "price": "",
-    "image": "/images/products/product_1695529805909.jpg",
-    "description": "",
-    "category": ""
+    "name": "New Product",
+    "price": 105,
+    "images": [
+      "product_default.png"
+    ],
+    "description": "Description....",
+    "colors": [
+      "#ababab"
+    ],
+    "sizes": [
+      "s",
+      "xl"
+    ],
+    "category": "new"
   }
 ]

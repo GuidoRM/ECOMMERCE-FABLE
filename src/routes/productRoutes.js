@@ -39,4 +39,6 @@ router.post("/create", (req, res, next) => {
     });
 });
 
+router.get("/cart", productController.cart);
+
 module.exports = router;

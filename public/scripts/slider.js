@@ -15,7 +15,7 @@ counters[indexImage].classList.add("slider-images-count-active");
 
 for (let [i, image] of images.entries()) {
     image.style.transform = `translateX(${positionDefault}px)`
-    positionDefault = (i + 1) * 627;
+    positionDefault = (i + 1) *  830;
 }
 
 const buttonBack = document.querySelector(".back-image");
@@ -37,7 +37,9 @@ buttonNext.addEventListener("click", () => {
     if (getTranslateXValue(images[images.length - 1]) !== 0) {
 
         for (let image of images) {
-            image.style.transform = `translateX(${getTranslateXValue(image) - 627}px)`
+            image.style.transform = `translateX(${getTranslateXValue(image) -  830}px)`
+            image.style.index = `24`
+
         }
 
 
@@ -53,7 +55,7 @@ buttonBack.addEventListener("click", () => {
     if (getTranslateXValue(images[0]) < 0) {
 
         for (let image of images) {
-            image.style.transform = `translateX(${getTranslateXValue(image) + 627}px)`;
+            image.style.transform = `translateX(${getTranslateXValue(image) +  830}px)`;
         }
 
         counters[indexImage].classList.remove("slider-images-count-active");

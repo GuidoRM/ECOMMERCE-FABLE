@@ -18,47 +18,65 @@
 
                 <div class="back-image"><i class="fa-solid fa-chevron-left"></i></div>
 
-                <img src="/images/jacket/jacket_1.png" alt="Jacket Image">
-                <img src="/images/jacket/jacket_2.png" alt="Jacket Image">
-                <img src="/images/jacket/jacket_3.png" alt="Jacket Image">
-                <img src="/images/jacket/jacket_1.png" alt="Jacket Image">
-                <img src="/images/jacket/jacket_2.png" alt="Jacket Image">
-                <img src="/images/jacket/jacket_3.png" alt="Jacket Image">
+                <% for(let image of product.images) { %>
+                <img src="/images/products/<%=image%>" alt="Jacket Image">
+                <% } %>
 
                 <div class="next-image"><i class="fa-solid fa-chevron-right"></i></div>
 
             </section>
 
             <section class="detail-product-description">
-                <h2>JAСKET KLS</h2>
-                <p>€105</p>
-                <ul class="color-list">
-                    <li><a href></a></li>
-                    <li><a href></a></li>
-                    <li><a href></a></li>
-                </ul>
-                <ul class="size-list">
-                    <li>XS</li>
-                    <li>S</li>
-                    <li>M</li>
-                    <li>L</li>
-                    <li>XL</li>
-                </ul>
-                <form action>
-                    <button>Add to cart</button>
+                <h2><%= product.name %></h2>
+                <p>€<%= product.price %></p>
+
+                <form id="form-addCarrito" action="/product/cart" method="get">
+                    <ul class="form-field-color">
+                        <% for(let color of product.colors) { %>
+                        <label
+                            style="background-color:<%= color %>;"
+                            for="<%= color %>">
+                        </label>
+
+                        <input disabled
+                            type="color" name="colors">
+
+                        <% } %>
+                    </ul>
+
+                    <section class="form-field">
+                        <% for(let size of product.sizes) { %>
+                        <label
+                            class="label-size"
+                            for="<%= size %>">
+                            <%= size.toUpperCase() %>
+                        </label>
+
+                        <input
+                            class="size-input"
+                            type="checkbox"
+                            name="sizes"
+                            id="<%= size %>"
+                            value="<%= size %>"
+                            disabled
+                            >
+
+                        <% } %>
+
+                    </section>
+
+                    <button disabled type="submit">Add to cart</button>
                 </form>
                 <section class="product-info">
                     <h3>PRODUCT INFO</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sapiente eaque nulla ullam nemo, quisquam debitis
-                        delectus aspernatur praesentium ipsa aliquam possimus
-                        exercitationem molestias ex? Nihil nulla dolorem
-                        perferendis est illo.</p>
+                    <%= product.description %>
                 </section>
             </section>
         </main>
 
         <script src="/scripts/slider.js"></script>
+        <script src="/scripts/detailAddCart.js"></script>
+        
     </body>
 
     <%- include('./partials/footer.ejs') %>
