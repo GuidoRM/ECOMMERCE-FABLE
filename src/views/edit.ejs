@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <%- include('./partials/init') %>
+        <link rel="stylesheet" href="/styles/create.css">
+        <link rel="stylesheet" href="/styles/sliderCard.css">
+    </head>
+
+    <body>
+        <%- include('./partials/header') %>
+
+        <form method="POST" target="/product/create" class="form-create"
+            enctype="multipart/form-data">
+            <section class="form-create-section">
+                <section class="form-field-img">
+                    <label>Images</label>
+
+                    <label class="label-inputImage" for="imageInput">
+                    
+                        
+                    </label>
+                    
+
+                    <img id="imagePreview" src="/images/products/product_default.png" alt="Vista previa de la imagen">
+
+                </section>
+
+                <section class="form-field-button">
+                    <button type="submit">EDIT PRODUCT</button>
+                    <button type="reset">RESET</button>
+                </section>
+            </section>
+
+            <section class="form-create-section">
+                <section class="form-field">
+                    <label for>Nombre</label>
+                    <input placeholder="Enter name" name="name" type="text">
+                </section>
+
+                <section class="form-field-two">
+                    <section class="form-field">
+                        <label for>Price</label>
+                        <input placeholder="Enter price" name="price"
+                            type="number">
+                    </section>
+
+                    <section class="form-field">
+                        <label for>Category</label>
+                        <input placeholder="Enter category" name="category"
+                            type="text">
+                    </section>
+
+                    <section class="form-field-img">
+                        <label for="imageInput">Image</label>
+                        <label type="button" class="form-buttom-image" for="imageInput">
+                            Upload Image
+                        </label>
+                        <input name="images" type="file" multiple id="imageInput" style="display: none;">
+                    </section>
+                </section>
+
+                <section class="form-field">
+                    <label for>
+                        Add Color
+                    </label>
+
+                    <div id="color-container">
+                        <label id="add-color" class="color-label" for>
+                            <img src="/images/icon_button_color.png" alt="icon palette">
+                        </label>
+                    </div>
+                </section>
+
+                <section class="form-field">
+                    <label for>
+                       Sizes
+                    </label>
+
+                    <section class="form-field-color">
+                        <label for="size-xs">XS</label>
+                        <input class="size-input" type="checkbox" name="sizes" value="xs" id="size-xs">
+    
+                        <label for="size-s">S</label>
+                        <input class="size-input" type="checkbox" name="sizes" value="s" id="size-s">
+    
+                        <label for="size-m">M</label>
+                        <input class="size-input" type="checkbox" name="sizes" value="m" id="size-m">
+    
+                        <label for="size-x">X</label>
+                        <input class="size-input" type="checkbox" name="sizes" value="x" id="size-x">
+    
+                        <label for="size-xl">XL</label>
+                        <input class="size-input" type="checkbox" name="sizes" value="xl" id="size-xl">
+                    </section>
+                </section>
+
+                <section class="form-field-textarea">
+                    <label for>Description</label>
+                    <textarea name="description"></textarea>
+                </section>
+            </section>
+        </form>
+        <script src="/scripts/create.js"></script>
+        <script src="/scripts/previewImage.js"></script>
+        <%- include('./partials/footer.ejs') %>
+    </body>
+
+</html>

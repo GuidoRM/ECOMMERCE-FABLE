@@ -31,34 +31,40 @@
                 <p>€<%= product.price %></p>
 
                 <form id="form-addCarrito" action="/product/cart" method="get">
+
                     <ul class="form-field-color">
                         <% for(let color of product.colors) { %>
-                        <label
-                            style="background-color:<%= color %>;"
-                            for="<%= color %>">
-                        </label>
+                            <label
+                                style="background-color:<%= color %>;"
+                                for="<%= color %>">
+                            </label>
 
-                        <input disabled
-                            type="color" name="colors">
+                            <input
+                                type="checkbox"
+                                name="colors"
+                                id="<%= color %>"
+                                value="<%= color %>"
+                            >
 
                         <% } %>
+                        
+
                     </ul>
 
                     <section class="form-field">
                         <% for(let size of product.sizes) { %>
-                        <label
-                            class="label-size"
-                            for="<%= size %>">
-                            <%= size.toUpperCase() %>
-                        </label>
+                            <label
+                                class="size-label"
+                                for="<%= size %>">
+                                <%= size.toUpperCase() %>
+                            </label>
 
-                        <input
-                            class="size-input"
-                            type="checkbox"
-                            name="sizes"
-                            id="<%= size %>"
-                            value="<%= size %>"
-                            disabled
+                            <input
+                                class="size-input"
+                                type="checkbox"
+                                name="sizes"
+                                id="<%= size %>"
+                                value="<%= size %>"
                             >
 
                         <% } %>
@@ -66,6 +72,7 @@
                     </section>
 
                     <button disabled type="submit">Add to cart</button>
+
                 </form>
                 <section class="product-info">
                     <h3>PRODUCT INFO</h3>
@@ -76,7 +83,7 @@
 
         <script src="/scripts/slider.js"></script>
         <script src="/scripts/detailAddCart.js"></script>
-        
+
     </body>
 
     <%- include('./partials/footer.ejs') %>

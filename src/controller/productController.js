@@ -53,6 +53,12 @@ const productController = {
         const cart = req.query;
 
         res.send(cart)
+    },
+    edit: (req, res) => {
+        res.render("create")
+    },
+    editingProcess: (req, res) => {
+
     }
 }
 

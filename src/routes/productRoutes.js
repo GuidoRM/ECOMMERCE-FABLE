@@ -39,6 +39,21 @@ router.post("/create", (req, res, next) => {
     });
 });
 
+
+router.get("/edit", productController.edit);
+
+router.post("/edit", (req, res, next) => {
+    // Utiliza el middleware para subir múltiples archivos
+    uploadFiles(req, res, (err) => {
+        if (err) {
+            // Handle error de carga de archivos aquí, si es necesario
+            return res.status(500).json({ error: err.message });
+        }
+        // Llama a la función de controlador para procesar los datos del formulario
+        productController.editingProcess(req, res, next);
+    });
+});
+
 router.get("/cart", productController.cart);
 
 module.exports = router;
