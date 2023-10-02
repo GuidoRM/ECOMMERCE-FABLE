@@ -105,5 +105,226 @@
       "xl"
     ],
     "category": "Jacket"
+  },
+  {
+    "id": 5,
+    "name": "New Product",
+    "price": 105,
+    "images": [
+      "product_1695833131607.jpg"
+    ],
+    "description": "Description....",
+    "colors": [
+      "#ababab"
+    ],
+    "sizes": [
+      "s",
+      "xl"
+    ],
+    "category": "new"
+  },
+  {
+    "id": 6,
+    "name": "New Product",
+    "price": 105,
+    "images": [
+      "product_default.png"
+    ],
+    "description": "Description....",
+    "colors": "#e67979",
+    "sizes": [
+      "s",
+      "xl"
+    ],
+    "category": "new"
+  },
+  {
+    "id": 7,
+    "name": "dasasd",
+    "price": 105,
+    "images": [
+      "product_default.png"
+    ],
+    "description": "Description....",
+    "colors": [
+      "#e67979",
+      "#964f4f"
+    ],
+    "sizes": [
+      "s",
+      "xl"
+    ],
+    "category": "new"
+  },
+  {
+    "id": 8,
+    "name": "dasasd",
+    "price": 105,
+    "images": [
+      "product_default.png"
+    ],
+    "description": "Description....",
+    "colors": [
+      "#e67979",
+      "#964f4f"
+    ],
+    "sizes": [
+      "xs",
+      "s"
+    ],
+    "category": "new"
+  },
+  {
+    "id": 9,
+    "name": "New Product",
+    "price": 105,
+    "images": [
+      "product_1695834349992.jpg"
+    ],
+    "description": "Description....",
+    "colors": [
+      "#ababab"
+    ],
+    "sizes": [
+      "s",
+      "xl"
+    ],
+    "category": "new"
+  },
+  {
+    "id": 10,
+    "name": "New Product",
+    "price": 105,
+    "images": [
+      "product_default.png"
+    ],
+    "description": "Description....",
+    "colors": [
+      "#ababab"
+    ],
+    "sizes": [
+      "s",
+      "xl"
+    ],
+    "category": "new"
+  },
+  {
+    "id": 11,
+    "name": "Jacket Klassic ABCDE",
+    "price": "2000",
+    "images": [
+      "product_default.png"
+    ],
+    "description": "aaaaaaaaaaa",
+    "colors": [
+      "#2a2c3a",
+      "#f49090"
+    ],
+    "sizes": [
+      "xs",
+      "s"
+    ],
+    "category": "Jacket"
+  },
+  {
+    "id": 12,
+    "name": "Jacket Klassic ABCDE",
+    "price": "2000",
+    "images": [
+      "product_1695835071985.png"
+    ],
+    "description": "aaaaaaaaaaa",
+    "colors": [
+      "#2a2c3a",
+      "#f49090"
+    ],
+    "sizes": [
+      "xs",
+      "s"
+    ],
+    "category": "Jacket"
+  },
+  {
+    "id": 13,
+    "name": "New Product",
+    "price": 105,
+    "images": [
+      "product_1695836578813.png",
+      "product_1695836578822.png"
+    ],
+    "description": "Description....",
+    "colors": [
+      "#ababab"
+    ],
+    "sizes": [
+      "s",
+      "xl"
+    ],
+    "category": "new"
+  },
+  {
+    "id": 14,
+    "name": "New Product",
+    "price": 105,
+    "images": [
+      "product_default.png"
+    ],
+    "description": "Description....",
+    "colors": [
+      "#ababab"
+    ],
+    "sizes": [
+      "s",
+      "xl"
+    ],
+    "category": "new"
+  },
+  {
+    "id": 15,
+    "name": "New Product",
+    "price": 105,
+    "images": [
+      "product_default.png"
+    ],
+    "description": "Description....",
+    "colors": [
+      "#ababab"
+    ],
+    "sizes": [
+      "s",
+      "xl"
+    ],
+    "category": "new"
+  },
+  {
+    "id": 16,
+    "name": "Guido Mamani",
+    "price": "123",
+    "images": [
+      "product_1696026820653.png"
+    ],
+    "description": "asdas",
+    "colors": "#c46e6e",
+    "sizes": [
+      "s",
+      "m"
+    ],
+    "category": "Jacket"
+  },
+  {
+    "id": 17,
+    "name": "New Product",
+    "price": 105,
+    "images": [
+      "product_1696283060143.jpg",
+      "product_1696283060144.png"
+    ],
+    "description": "Description....",
+    "colors": "#f93939",
+    "sizes": [
+      "s",
+      "xl"
+    ],
+    "category": "new"
   }
 ]

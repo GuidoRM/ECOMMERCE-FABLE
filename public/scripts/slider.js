@@ -1,7 +1,11 @@
+//Contenedor del slider
 const sliderContainer = document.querySelector(".slider-images");
-const images = document.querySelectorAll(".slider-images img");
 
+//Contenedor de los contadores
 const counterContainer = document.querySelector(".slider-images-counter");
+
+//Todas las imagenes del contenedor
+const images = document.querySelectorAll(".slider-images img");
 
 for (let i = 0; i < images.length; i++) {
     counterContainer.innerHTML += "<li class='slider-images-count'></li>";
@@ -11,6 +15,7 @@ const counters = document.querySelectorAll(".slider-images-count");
 
 let indexImage = 0
 let positionDefault = 0;
+
 counters[indexImage].classList.add("slider-images-count-active");
 
 for (let [i, image] of images.entries()) {
@@ -34,6 +39,10 @@ const getTranslateXValue = (element) => {
 }
 
 buttonNext.addEventListener("click", () => {
+    //Todas las imagenes del contenedor 
+    const imagesX = document.querySelectorAll(".slider-images img");
+    console.log(imagesX.length)
+   
     if (getTranslateXValue(images[images.length - 1]) !== 0) {
 
         for (let image of images) {
@@ -64,3 +73,8 @@ buttonBack.addEventListener("click", () => {
     }
 })
 
+function agregarImagen() {
+    const sliderContainer = document.querySelector(".slider-images");
+    sliderContainer.innerHTML += "<img src='/images/products/product_default.png'>"
+
+}

@@ -4,7 +4,32 @@ const addColorButton = document.getElementById('add-color');
 let idColorInput = "color-selected";
 let countColorInput = 0;
 
+const deleteColor = () => {
+  console.log("AAAAAAAAAA");
+  const inputColors = document.querySelectorAll(".color-option-container")
+  const deleteIcons = document.querySelectorAll(".color-option-container i")
+
+  const deleteButton = document.getElementById("delete-color-button")
+  deleteButton.classList.toggle("delete-color-button-selected");
+
+  deleteIcons.forEach(deleteIcon => {
+    deleteIcon.classList.toggle("delete-color-button-selected-item")
+  })
+
+  inputColors.forEach(inputColor => {
+    inputColor.addEventListener("click", () => {
+      if (deleteButton.classList.contains("delete-color-button-selected")) {
+        inputColor.remove()
+      }
+
+    })
+
+  })
+
+}
+
 addColorButton.addEventListener('click', () => {
+  console.log("AAAAAAAAA")
   // Crea un nuevo campo de entrada de color
   addColorButton.setAttribute("for", `${idColorInput + countColorInput}`);
   const colorInput = document.createElement('input');

@@ -1,0 +1,51 @@
+#delete-color-button {
+  border: 1px solid #a2a2a2;
+  font-size: 16px;
+  color: white;
+  background: #000000;
+  padding: 5px 10px;
+  border-radius: 2rem;
+}
+
+#delete-color-button i {
+  color: inherit;
+}
+
+#delete-color-button:hover {
+  color: #000000 !important;
+  background: #ffffff;
+}
+
+.delete-color-button-selected {
+  color: #000000 !important;
+  background: #ffffff !important;
+}
+
+.color-option-container {
+  position: relative;
+}
+
+.color-option-container i {
+  width: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.delete-color-button-selected-item {
+  overflow: visible;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el elemento exactamente */
+  color: #ffffff;
+  background-color: #a2a2a250;
+  padding: 2px;
+  border-radius: 100%;
+  width: 30px !important;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

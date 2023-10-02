@@ -40,7 +40,7 @@ router.post("/create", (req, res, next) => {
 });
 
 
-router.get("/edit", productController.edit);
+router.get("/edit/:idProduct", productController.edit);
 
 router.post("/edit", (req, res, next) => {
     // Utiliza el middleware para subir múltiples archivos

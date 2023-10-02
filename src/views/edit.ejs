@@ -4,25 +4,27 @@
     <head>
         <%- include('./partials/init') %>
         <link rel="stylesheet" href="/styles/create.css">
+        <link rel="stylesheet" href="/styles/edit.css">
         <link rel="stylesheet" href="/styles/sliderCard.css">
     </head>
 
     <body>
         <%- include('./partials/header') %>
 
-        <form method="POST" target="/product/create" class="form-create"
+        <form id="form-edit-product" method="POST" target="/product/create"
+            class="form-create"
             enctype="multipart/form-data">
             <section class="form-create-section">
                 <section class="form-field-img">
                     <label>Images</label>
 
                     <label class="label-inputImage" for="imageInput">
-                    
-                        
-                    </label>
-                    
 
-                    <img id="imagePreview" src="/images/products/product_default.png" alt="Vista previa de la imagen">
+                    </label>
+
+                    <img id="imagePreview"
+                        src="/images/products/product_default.png"
+                        alt="Vista previa de la imagen">
 
                 </section>
 
@@ -35,69 +37,131 @@
             <section class="form-create-section">
                 <section class="form-field">
                     <label for>Nombre</label>
-                    <input placeholder="Enter name" name="name" type="text">
+                    <input
+                        placeholder="Enter name"
+                        name="name"
+                        type="text"
+                        value="<%= product.name %>">
                 </section>
 
                 <section class="form-field-two">
+
                     <section class="form-field">
                         <label for>Price</label>
-                        <input placeholder="Enter price" name="price"
-                            type="number">
+
+                        <input
+                            placeholder="Enter price"
+                            name="price"
+                            type="number"
+                            value="<%= product.price %>">
+
                     </section>
 
                     <section class="form-field">
                         <label for>Category</label>
-                        <input placeholder="Enter category" name="category"
-                            type="text">
+                        <input
+                            placeholder="Enter category"
+                            name="category"
+                            type="text"
+                            value="<%= product.category %>">
                     </section>
 
                     <section class="form-field-img">
                         <label for="imageInput">Image</label>
-                        <label type="button" class="form-buttom-image" for="imageInput">
+                        <label type="button" class="form-buttom-image"
+                            for="imageInput">
                             Upload Image
                         </label>
-                        <input name="images" type="file" multiple id="imageInput" style="display: none;">
+
+                        <input
+                            name="images"
+                            type="file"
+                            multiple
+                            id="imageInput"
+                            style="display: none;">
+
                     </section>
+
                 </section>
 
                 <section class="form-field">
+
                     <label for>
                         Add Color
+
+                        <button id="delete-color-button" type="button"
+                            onclick="deleteColor()">
+                            <i class="fa-solid fa-delete-left"></i> Delete Color
+                        </button>
+
                     </label>
 
                     <div id="color-container">
+
                         <label id="add-color" class="color-label" for>
-                            <img src="/images/icon_button_color.png" alt="icon palette">
+                            <img src="/images/icon_button_color.png"
+                                alt="icon palette">
                         </label>
+
+                        <% product.colors.forEach(color => { %>
+
+                        <div class="color-option-container">
+                            <input
+                                type="color"
+                                name="colors"
+                                required
+                                class="input-color"
+                                id="<%= color  %>"
+                                value="<%= color %>">
+
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+
+                        <% }) %>
+
                     </div>
+
                 </section>
 
                 <section class="form-field">
                     <label for>
-                       Sizes
+                        Sizes
                     </label>
 
                     <section class="form-field-color">
-                        <label for="size-xs">XS</label>
-                        <input class="size-input" type="checkbox" name="sizes" value="xs" id="size-xs">
-    
-                        <label for="size-s">S</label>
-                        <input class="size-input" type="checkbox" name="sizes" value="s" id="size-s">
-    
-                        <label for="size-m">M</label>
-                        <input class="size-input" type="checkbox" name="sizes" value="m" id="size-m">
-    
-                        <label for="size-x">X</label>
-                        <input class="size-input" type="checkbox" name="sizes" value="x" id="size-x">
-    
-                        <label for="size-xl">XL</label>
-                        <input class="size-input" type="checkbox" name="sizes" value="xl" id="size-xl">
+
+                        <% for( let size of ["xs","s","m","x","xl"]) { %>
+                            <label 
+                                for="size-<%=size%>"
+
+                                <% if (product.sizes.includes(size)) { %>
+                                    class="label-color-selected"
+                                <% } %>
+                            >
+                                <%= size.toUpperCase() %>
+                                
+                            </label>
+
+                            <input 
+                                class="size-input" 
+                                
+                                <% if (product.sizes.includes(size)) { %>
+                                    checked
+                                <% } %>
+                                
+                                type="checkbox"
+                                name="sizes" 
+                                value="<%=size%>" 
+                                id="size-<%=size%>"
+                            >
+
+                        <% } %>
                     </section>
                 </section>
 
                 <section class="form-field-textarea">
                     <label for>Description</label>
-                    <textarea name="description"></textarea>
+                    <textarea name="description"><%= product.description %></textarea>
                 </section>
             </section>
         </form>

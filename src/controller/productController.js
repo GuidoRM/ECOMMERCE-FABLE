@@ -55,7 +55,16 @@ const productController = {
         res.send(cart)
     },
     edit: (req, res) => {
-        res.render("create")
+        const productsJSON = fs.readFileSync("./src/db/products.json", "utf-8");
+        const productsObject = JSON.parse(productsJSON);
+
+        const id = req.params.idProduct;
+
+        const productFound = productsObject.filter((product) => {
+            return product.id == id;
+        })
+
+        res.render("edit", { product: productFound[0] })
     },
     editingProcess: (req, res) => {
 
